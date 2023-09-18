@@ -61,9 +61,24 @@ poäng = float(input("Ange poäng: "))
 if poäng >= 8:
     print("Betyg: E")
 else:
-    print("Betyg: F")"""
+    print("Betyg: F")  
 
-3 + 4
+hemlighet = input("Vill du höra en hemlighet? ")
+if hemlighet == "ja" or hemlighet == "Ja":
+    print("fortfarande hemligt")
+else:
+    print("vad synd")  
+
+
+bokstav = input("Skriv en bokstav: ")
+if bokstav.lower() == "a":
+    print("Första bokstaven i alfabetet")
+elif bokstav.lower() == "ö":
+    print("Sista bokstaven i alfabetet")
+else:
+    print("Ej a eller ö") """
+
+
 
 
 
