@@ -1,5 +1,3 @@
-#Kodexempel som ledtråd till slumptal. (4p)
-
 #import random
 #tal = random.randint(1, 6) # slumptal 1, 2, 3, 4, 5 eller 6.
 
@@ -10,15 +8,9 @@
 
 import random
 lista = []
+tal = random.randint(1, 6)
 for i in range(20):
-    randomint = random.randint(1, 6)
-    lista.append(randomint)
+    lista.append(random.randint(1, 6))
 print(lista)
+print("antal treor:", lista.count(3))
 
-svar = 0
-
-for i in lista:
-    if i == 3:
-        svar = svar + 1
-
-print(svar)
