@@ -10,7 +10,7 @@ while loop == True:
         answer = input("Which door do you choose? (1, 2, 3) ")
         if answer == "1" or answer == "2" or answer == "3":
             answer = int(answer)
-            answer = answer -1
+            answer = answer - 1
             anwser_loop = False 
     
     
