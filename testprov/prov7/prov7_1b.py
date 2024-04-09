@@ -3,4 +3,4 @@ for b in a:
     if b == 20:
         print(b)
     else:
-        print(0)
+        print(0) 

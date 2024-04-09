@@ -12,5 +12,10 @@ while loop == True:
             answer = int(answer)
             answer = answer - 1
             anwser_loop = False 
-    
+        found_goat_door = False
+        for i in range(3): 
+            if doors[i] == 0 and i != answer and found_goat_door == False:
+                print(i + 1)
+                found_goat_door = True
+
     
