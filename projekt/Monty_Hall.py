@@ -3,7 +3,7 @@ import random
 # 0 = goat, 1 = car
 doors=[0, 0, 0]
 loop = input("?: ")
-while loop == True:
+while loop == "1" or loop == "2" or loop == "3":
     doors[random.randint(0, 2)] = 1
     print(doors)
     anwser_loop = True
@@ -26,3 +26,18 @@ print("Rätt dörr är: ", doors.index(1) + 1)
     
 
 
+
+
+
+
+
+
+
+x = 1
+
+
+while x == "1":
+    print(awdawdwa)
+
+while x == True:
+    print(adwh)    
