@@ -4,12 +4,12 @@ import random
 doors=[0, 0, 0]
 doors[random.randint(0, 2)] = 1
 answer = int(input("Which door do you choose? (1, 2, 3) "))
-while answer == 1 or answer == 2 or answer == 3:
+if answer == 1 or answer == 2 or answer == 3:
     print(doors)
     anwser_loop = True
     
     
-    while anwser_loop == True:
+    if anwser_loop == True:
         if answer == 1 or answer == 2 or answer == 3:
             answer = int(answer)
             answer = answer - 1
