@@ -2,7 +2,7 @@ import random
 
 # 0 = goat, 1 = car
 doors=[0, 0, 0]
-loop = input("?: ")
+loop = input("eb: ")
 while loop == "1" or loop == "2" or loop == "3":
     doors[random.randint(0, 2)] = 1
     print(doors)
@@ -15,7 +15,7 @@ while loop == "1" or loop == "2" or loop == "3":
             answer = int(answer)
             answer = answer - 1
             anwser_loop = False 
-        found_goat_door = False    
+        found_goat_door = False   
         for i in range(3): 
             if doors[i] == 0 and i != answer and found_goat_door == False:
                 print("door number", i + 1, "is wrong, now choose again")
