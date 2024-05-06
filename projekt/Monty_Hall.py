@@ -2,9 +2,9 @@ import random
 
 # 0 = get, 1 = bil
 doors=[0, 0, 0]
+doors[random.randint(0, 2)] = 1
 answer = int(input("Which door do you choose? (1, 2, 3) "))
 while answer == "1" or answer == "2" or answer == "3":
-    doors[random.randint(0, 2)] = 1
     print(doors)
     anwser_loop = True
     
