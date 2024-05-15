@@ -9,11 +9,15 @@ if answer == 1 or answer == 2 or answer == 3:
     
     
 if answer == 1 or answer == 2 or answer == 3:
-        answer = int(answer)
-        answer = answer - 1
+    answer = int(answer)
+    answer = answer - 1
 for i in range(3): 
-            if doors[i] == 0 and i != answer:
-                print("door number", i + 1, "is wrong, now choose again")
+    if doors[i] == 0 and i != answer:
+        print("door number", i + 1, "is wrong, now choose again")
+switch_door = input("Do you want to switch door? ")
+if switch_door == "yes":
+    new_answer = int(input("Which door do you choose? (1, 2, 3) "))
+    new_answer = new_answer - 1
 #print("Rätt dörr är: ", doors.index(1) + 1)
     
 
