@@ -8,8 +8,8 @@ while game_loop == True:
     answer = input("Which door do you choose? (1, 2, 3) ").lower()
     if answer.isdigit() == True:
         answer = int(answer)
-    if answer == 1 or answer == 2 or answer == 3:
-        print(doors)
+    #if answer == 1 or answer == 2 or answer == 3:
+        #print(doors)
     
     potential_dors_to_open = []   
     if answer == 1 or answer == 2 or answer == 3:
@@ -19,8 +19,8 @@ while game_loop == True:
         if doors[i] == 0 and i != answer:
             potential_dors_to_open.append(i)
     index = random.randint(0,(len(potential_dors_to_open) -1))
-    print("door number", potential_dors_to_open[index] + 1, "is wrong, now choose again")
-    print(potential_dors_to_open ,index)
+    print("door number", potential_dors_to_open[index] + 1, "is wrong. ")
+    #print(potential_dors_to_open ,index)
     switch_door = input("Do you want to switch door? (Yes/No)").lower()
     if switch_door == "yes":
         new_answer = int(input("Which door do you choose? (1, 2, 3) "))
