@@ -11,15 +11,15 @@ while game_loop == True:
     #if answer == 1 or answer == 2 or answer == 3:
         #print(doors)
     
-    potential_dors_to_open = []   
+    potential_doors_to_open = []   
     if answer == 1 or answer == 2 or answer == 3:
         answer = int(answer)
         answer = answer - 1
     for i in range(3): 
         if doors[i] == 0 and i != answer:
-            potential_dors_to_open.append(i)
-    index = random.randint(0,(len(potential_dors_to_open) -1))
-    print("door number", potential_dors_to_open[index] + 1, "is wrong. ")
+            potential_doors_to_open.append(i)
+    index = random.randint(0,(len(potential_doors_to_open) -1))
+    print("door number", potential_doors_to_open[index] + 1, "is wrong. ")
     #print(potential_dors_to_open ,index)
     switch_door = input("Do you want to switch door? (Yes/No)").lower()
     if switch_door == "yes":
@@ -34,7 +34,7 @@ while game_loop == True:
             print("You won! ")
         else:
             print("You lost :( ")
-    play_again = input("Do you want to play again? (Yes/No)").lower()
+    play_again = input("Do you want to play again? (Yes/No) ").lower()
     if play_again == "yes":
         game_loop = True
     else:
